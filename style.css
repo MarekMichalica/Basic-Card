@@ -1,0 +1,131 @@
+@import url(https://fonts.google.com/specimen/Inter);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Segoe UI';
+}
+.maincard{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1300px;
+    height: 500px;
+    background: white;
+    border-radius: 15px;
+}
+.textcard{
+    width: 650px;
+    height: 500px;
+    background-color: hsl(250, 38%, 16%);
+    border-radius: 12px 0 0 12px;
+}
+.imgcard{
+    width: 650px;
+    height: 500px;
+    background: url(images/Mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 12px 12px 0;
+
+}
+.title{
+    position: relative;
+    top: 13%;
+    left: 10%;
+    width: 450px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI';
+}
+.paragraph{
+    width: 400px;
+    position: relative;
+    top: 23%;
+    left: 10%;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+.pText{
+    font-size: 20px;
+    line-height: 30px;
+}
+.numbers{
+    display: flex;
+    position: relative;
+    top: 37%;
+    left: 10%;
+}
+.first{
+    margin: 0 6em 0 0;
+}
+.color{
+    color: hsl(283, 81%, 38%);
+}
+.bottomTitle{
+    display: block;
+    margin-bottom: -0.5em;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.bottomText{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (max-width: 1500px){
+    .maincard{
+        display: grid;
+        width: 500px;
+        height: 1100px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "i"
+        "b";
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+    .textcard{
+        grid-area: b;
+        width: 500px;
+        border-radius: 0 0 10px 10px;
+        height: 800px;
+    }
+    .imgcard{
+        width: 500px;
+        height: 300px;
+        border-radius: 10px 10px 0 0;
+    }
+    .title{
+        text-align: center;
+        position: relative;
+        top: 9%;
+        left: 15%;
+        font-size: 20px;
+        width: 350px;
+    }
+    .pText{
+        text-align: center;
+        margin-top: -3em;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .numbers{
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 30%;
+    }
+    .bottomText{
+        display: block;
+        margin-bottom: 2em;
+    }
+}
